@@ -22,8 +22,11 @@ Twitter上に貼られたIDをクリップボードに貼り付けるまでし�
 
 ### モジュールのインストール
 
-トップディレクトリで以下のコマンドを実行  
+トップディレクトリで以下のコマンドを実行
+
+```
 $ pip install -r requirements.txt
+```
 
 ## search_akasha.py
 
