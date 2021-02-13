@@ -1,5 +1,6 @@
 import tweepy
 from credentials.credentials import consumer_key, consumer_secret, access_token, access_token_secret
+import re
 
 def initalize():
     # Twitterオブジェクトの生成--------------------------------------------
@@ -10,12 +11,9 @@ def initalize():
 
     return api
 
-def main():
-    api = initalize()
-    word = ['検索ワード']
-
-    for tweet in tweepy.Cursor(api.search,count=1000, q=word, tweet_mode='extend', lang='ja').items(10):
-        print(tweet.text.strip().replace('\n',' '))
-
-if __name__ == '__main__':
-    main()
+def strip_id(str):
+    id_list = re.findall(r'[0-9A-F]{8}\s:参戦ID', str)
+    if id_list:
+        return id_list[-1][0:8]
+    else:
+        return None
