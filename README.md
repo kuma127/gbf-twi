@@ -24,8 +24,8 @@ Twitter上に貼られたIDをクリップボードに貼り付けるまでし�
 
 トップディレクトリで以下のコマンドを実行
 
-```
-$ pip install -r requirements.txt
+```ja
+pip install -r requirements.txt
 ```
 
 ## search_akasha.py
@@ -36,5 +36,5 @@ $ pip install -r requirements.txt
 ## pyqt_akasha.py
 
 search_akasha.pyの実行を  
-PyQt5によって  
-簡単なGUIによりボタンをポチッとするだけで実行できるようにしたもの
+PyQt5の簡単なGUIを利用して
+ボタンをポチッとするだけで実行できるようにしたもの
