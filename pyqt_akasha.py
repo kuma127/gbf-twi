@@ -9,11 +9,12 @@ def get_id(label_widget):
     word = ['参加者募集！ Lv200 アーカーシャ']
 
     for tweet in tweepy.Cursor(api.search,count=100, q=word, tweet_mode='extend', lang='ja').items(2):
-        text = tweet.text.strip().replace('\n',' ')
         if(tweet.source == 'グランブルー ファンタジー'):
+            text = tweet.text.strip().replace('\n',' ')
+            rescue_id = strip_id(text)
             # idをクリップボードにコピー
-            pyperclip.copy(strip_id(text))
-            label_widget.setText('ID: {0}'.format(strip_id(text)))
+            pyperclip.copy(rescue_id)
+            label_widget.setText('ID: {0}'.format(rescue_id))
             break
         else:
             label_widget.setText('ID: {0}'.format('id取得失敗'))

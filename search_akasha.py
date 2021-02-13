@@ -7,11 +7,12 @@ def main():
     word = ['参加者募集！ Lv200 アーカーシャ']
 
     for tweet in tweepy.Cursor(api.search,count=1000, q=word, tweet_mode='extend', lang='ja').items(1):
-        text = tweet.text.strip().replace('\n',' ')
         if(tweet.source == 'グランブルー ファンタジー'):
+            text = tweet.text.strip().replace('\n',' ')
+            rescue_id = strip_id(text)
             # idをクリップボードにコピー
-            pyperclip.copy(strip_id(text))
-            print(strip_id(text))
+            pyperclip.copy(rescue_id)
+            print(rescue_id)
             break
         else:
             print('id取得失敗')
