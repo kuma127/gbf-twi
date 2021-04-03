@@ -38,3 +38,9 @@ pip install -r requirements.txt
 search_akasha.pyの実行を  
 PyQt5の簡単なGUIを利用して
 ボタンをポチッとするだけで実行できるようにしたもの
+
+## pyqt_resque.py
+
+pyqt_akasha.pyを拡張して、
+各マルチをプルダウンで選択できるようにしたもの
+target_listに追加すれば全部の敵に対応可能
