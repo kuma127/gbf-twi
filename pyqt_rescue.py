@@ -11,7 +11,9 @@ target_list = [
     '四大天司ＨＬ',
     'Lv200 ワムデュス',
     'Lv200 イーウィヤ',
-    'Lv150 シュヴァリエ・マリス'
+    'Lv150 シュヴァリエ・マリス',
+    'Lv200 ガレヲン',
+    'Lv200 ルオー'
 ]
 
 class MainLayout(QtWidgets.QWidget):
