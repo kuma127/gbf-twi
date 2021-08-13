@@ -15,7 +15,9 @@ target_list = [
     'Lv200 ガレヲン',
     'Lv200 ルオー',
     'Lv200 リンドヴルム',
-    'Lv150 ルシファー'
+    'Lv150 ルシファー',
+    'Lv120 ギルガメッシュ',
+    'Lv150 アニマ・アニムス・コア'
 ]
 
 class MainLayout(QtWidgets.QWidget):
