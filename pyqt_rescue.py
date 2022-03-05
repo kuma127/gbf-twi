@@ -3,27 +3,8 @@ from PyQt5 import QtWidgets, Qt
 import tweepy
 import pyperclip
 from search_util import initalize, strip_id
+from target_list import target_list
 
-target_list = [
-    'Lv200 ジ・オーダー・グランデ',
-    'Lv200 アーカーシャ',
-    'Lv150 プロトバハムート',
-    '四大天司ＨＬ',
-    'Lv200 ワムデュス',
-    'Lv200 イーウィヤ',
-    'Lv150 シュヴァリエ・マリス',
-    'Lv200 ガレヲン',
-    'Lv200 ルオー',
-    'Lv200 リンドヴルム',
-    'Lv150 ルシファー',
-    'Lv120 ギルガメッシュ',
-    'Lv150 アニマ・アニムス・コア',
-    'Lv120 グリームニル',
-    '黄龍・黒麒麟HL',
-    'Lv200 フェディエル',
-    'Lv100 四象瑞神',
-    'Lv250 ベルゼバブ'
-]
 
 class MainLayout(QtWidgets.QWidget):
     def __init__(self, parent=None):
